@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en linea</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <section id="principal">
+        <article id="command">
+            <div class="container">
+                <h2 style="margin-bottom: 0;">Tres en línea</h2>
+                <div class="row" style="padding: 1em 1em;">
+                    <div class="col-xs-12 col-md-6">
+                        <h3> Jugador 1: </h3>
+                        <p id="jugador1Box" class="jugador"></p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <h3> Jugador 2: </h3>
+                        <p id="jugador2Box" class="jugador"></p>
+                    </div>
+                </div>
+                <h3 id="turnojugador" style="margin-top: 0;"></h3>
+            </div>
+        </article>
+        <div class="container">
+            <article id="board">
+                <input type="button" id="b0" onclick="colocar(this)">
+                <input type="button" id="b1" onclick="colocar(this)">
+                <input type="button" id="b2" onclick="colocar(this)"> <br>
+    
+                <input type="button" id="b3" onclick="colocar(this)">
+                <input type="button" id="b4" onclick="colocar(this)">
+                <input type="button" id="b5" onclick="colocar(this)"><br>
+    
+                <input type="button" id="b6" onclick="colocar(this)">
+                <input type="button" id="b7" onclick="colocar(this)">
+                <input type="button" id="b8" onclick="colocar(this)"><br>
+    
+            </article>
+            <!-- <div class="row">
+                <div class="col-xs-4" id="board"><input type="button" id="b0" onclick="colocar(this)"></div>
+                <div class="col-xs-4" id="board"><input type="button" id="b1" onclick="colocar(this)"></div>
+                <div class="col-xs-4" id="board"><input type="button" id="b2" onclick="colocar(this)"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4" id="board"><input type="button" id="b3" onclick="colocar(this)"></div>
+                <div class="col-xs-4" id="board"><input type="button" id="b4" onclick="colocar(this)"></div>
+                <div class="col-xs-4" id="board"><input type="button" id="b5" onclick="colocar(this)"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4" id="board"><input type="button" id="b6" onclick="colocar(this)"></div>
+                <div class="col-xs-4" id="board"><input type="button" id="b7" onclick="colocar(this)"></div>
+                <div class="col-xs-4" id="board"><input type="button" id="b8" onclick="colocar(this)"></div>
+            </div> -->
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div id="modal-header">
+                    <span class="close">&times;</span>
+                    <div id="modalHeaderText"></div>
+                </div>
+                <div class="modal-body">
+                    <div id="modalText"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="inicialModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header-start">
+                    <span class="close" id="closeHeader">&times;</span>
+                    <div id="modalHeaderStart">
+                        <h2>Inserta el nombre de los jugadores
+                        </h2>
+                    </div>
+    
+                </div>
+                <div class="modal-body">
+                    <div class="row" style="padding: 1em 1em;">
+                        <div class="col-xs-12 col-md-6">
+                            <h3> Jugador 1: </h3>
+                            <input type="text" name="" id="jugador1" width="100%">
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h3> Jugador 2: </h3>
+                            <input type="text" name="" id="jugador2" width="100%">
+                        </div>
+                    </div>
+                    <input type="button" id="iniciar" value="Comenzar" class="start">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
